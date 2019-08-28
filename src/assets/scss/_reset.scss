@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*reset*/
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+article, aside, figure, footer, header, hgroup, nav, section { display: block; }
+
+ul, ol { list-style: none; }
+img { border: 0 none; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+textarea { resize: none; }
+strong, em, i { font-style: normal; font-weight: normal; }
+del { text-decoration: line-through; }
+input::-ms-clear { display: none !important; }
+button[disabled], input[disabled] { cursor: default; }
+input, select, button, h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; font-family: inherit; }
+a { text-decoration: none; color: #666; }
+body { font: 12px/1.5 "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif; color: #333; background: #fff; }
+.clearfix { zoom: 1; }
+.clearfix:after { content: ''; display: block; height: 0; clear: both; visibility: hidden; }
+
+
+
+
+

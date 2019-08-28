@@ -1,0 +1,459 @@
+@import "reset";
+@import "_sprite";
+@import "select";
+
+// 公共部分
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 640px;
+  height: 100%;
+}
+.pic {
+  width: 100%;
+}
+.common-title {
+  font-size: 24pr;
+  color: #eb6849;
+  height: 45pr;
+  line-height: 45pr;
+  border: solid 1pr #eb6849;
+  padding: 0 4pr;
+  width: fit-content;
+  margin: 0 auto 18pr;
+}
+.common-word {
+  font-size: 20pr;
+  color: #6b757a;
+  padding: 0 8pr;
+}
+// banner
+
+// 15年，数十万学子选择新航道的三大理由
+.reason {
+  background-color: #f0f0f0;
+  padding: 40pr 20pr 42pr;
+  .title {
+    color: #565454;
+    font-size: 32pr;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .red-word {
+    color: #eb6849;
+  }
+  .short-title {
+    color: #808080;
+    font-size: 20pr;
+    text-align: center;
+    margin-bottom: 20pr;
+  }
+  .reason-container {
+    background-color: #fff;
+    box-shadow: 5pr 5pr 0pr 0pr rgba(166, 166, 166, 0.11);
+    padding: 18pr 0 22pr;
+    margin-bottom: 25pr;
+  }
+  .service-content {
+    height: 262pr;
+    padding: 0 8pr;
+    position: relative;
+    margin: 18pr 0 20pr;
+  }
+  .service-l {
+    color: #6b757a;
+    font-size: 20pr;
+    position: absolute;
+    padding: 40pr 0;
+    width: 61%;
+    height: 100%;
+    letter-spacing: 3pr;
+    line-height: 40pr;
+    box-sizing: border-box;
+  }
+  .service-r {
+    width: 34%;
+    height: 100%;
+    position: absolute;
+    right: 8pr;
+  }
+  .service-pic {
+    height: 100%;
+  }
+  .plan-swiper {
+    padding-bottom: 52pr;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10pr;
+  }
+  .swiper-pagination-bullet-active {
+    background: #eb6849;
+  }
+  .teacher-swiper {
+    padding-bottom: 48pr;
+    margin-top: 16pr;
+  }
+  .second-reason {
+    padding-bottom: 0;
+  }
+}
+
+// 1分钟了解 新航道 让英语学习更高效
+.know-xhd {
+  padding: 40pr 20pr;
+  background: url(../images/10.jpg) center no-repeat;
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 32pr;
+    font-weight: bold;
+    margin-bottom: 26pr;
+  }
+  .big-word {
+    font-size: 42pr;
+  }
+  .shipin {
+    display: block;
+    margin: 0 auto 26pr;
+  }
+  .course {
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(#3b3b3b, #3b3b3b);
+    background-blend-mode: normal, normal;
+  }
+  .course-title {
+    text-align: center;
+    line-height: 57pr;
+    color: #565454;
+    font-size: 24pr;
+    border-bottom: solid 1pr #e7e7e7;
+  }
+  .course-content {
+    display: flex;
+    padding: 16pr 0 18pr;
+  }
+  .content-link {
+    width: 25%;
+    text-align: center;
+    color: #585858;
+  }
+  .img-box {
+    width: 110pr;
+    margin: 0 auto;
+  }
+}
+
+// 金秋放“价” 约“惠”一下
+.citys {
+  padding: 44pr 20pr 24pr;
+  background: url(../images/11.jpg) center no-repeat;
+  background-size: 100% 100%;
+  .title {
+    text-align: center;
+    color: #565454;
+    font-size: 32pr;
+    font-weight: bold;
+  }
+  .organ-word {
+    color: #eb6849;
+  }
+  .short-title {
+    text-align: center;
+    color: #808080;
+    font-size: 20pr;
+  }
+  .city-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20pr;
+  }
+  .city-name {
+    width: 156pr;
+    height: 69pr;
+    background-color: #eb6849;
+    box-shadow: 2pr 4pr 0pr 0pr rgba(225, 106, 78, 0.3);
+    line-height: 69pr;
+    color: #fff;
+    font-size: 24pr;
+    text-align: center;
+    margin: 0 26pr 20pr 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+// 百元畅游大咖讲堂 随时随地随你心意
+.classroom {
+  background: url(../images/12.jpg) center no-repeat;
+  background-size: 100% 100%;
+  padding: 40pr 20pr 14pr;
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 32pr;
+    font-weight: bold;
+  }
+  .orange-word {
+    color: #eb6c4e;
+    font-size: 42pr;
+  }
+  .short-title {
+    text-align: center;
+    color: #ededed;
+    font-size: 20pr;
+    margin-bottom: 20pr;
+  }
+
+  .c-title {
+    color: #fff;
+    font-size: 24pr;
+    font-weight: bold;
+    text-align: center;
+    line-height: 52pr;
+    background-color: #eb6c4e;
+  }
+  .classroom-content {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 28pr 14pr 0;
+    margin-bottom: 26pr;
+  }
+  .c-list {
+    width: 48%;
+    margin-bottom: 24pr;
+  }
+  .c-txt {
+    color: #565454;
+    font-size: 20pr;
+    margin-top: 12pr;
+  }
+}
+
+// 查学校   查案例   查专业
+.ad {
+  position: relative;
+  .ad-link {
+    width: 30%;
+    height: 33%;
+
+    position: absolute;
+    top: 51%;
+    left: 46%;
+  }
+}
+
+// 官方品质，值得信赖
+.partner {
+  padding: 38pr 20pr 40pr;
+  .title {
+    text-align: center;
+    font-size: 32pr;
+    color: #565454;
+    font-weight: bold;
+  }
+  .red-word {
+    color: #eb6849;
+  }
+  .short-title {
+    text-align: center;
+    color: #808080;
+    font-size: 20pr;
+  }
+  .partner-banner {
+    margin: 18pr 0 12pr;
+  }
+}
+
+// 行业翘楚，媒体聚焦
+.info {
+  padding: 40pr 20pr;
+  background: url(../images/15.jpg) center no-repeat;
+  background-size: 100% 100%;
+  .title {
+    font-size: 32pr;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 22pr;
+    color: #fff;
+  }
+  .red-word {
+    color: #eb6849;
+  }
+  .img-box {
+    margin-bottom: 12pr;
+  }
+  .info-tuijian {
+    border: solid 2pr #fff;
+    overflow: hidden;
+    padding-bottom: 24pr;
+    position: relative;
+    .info-link {
+      position: absolute;
+      right: 0;
+      bottom: 10pr;
+    }
+  }
+  .info-txt {
+    color: #eb6849;
+    font-size: 24pr;
+    font-weight: bold;
+    margin-bottom: 8pr;
+    padding-left: 8pr;
+  }
+  .info-description {
+    color: #fff;
+    font-size: 20pr;
+    padding-left: 8pr;
+  }
+  .info-link {
+    color: #fff;
+    font-size: 20pr;
+    width: 134pr;
+    height: 40pr;
+    display: block;
+    line-height: 40pr;
+    text-align: center;
+    background-color: #eb6849;
+  }
+  .info-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8pr;
+    position: relative;
+    line-height: 40pr;
+    margin-bottom: 42pr;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:after {
+      content: "";
+      width: 5pr;
+      height: 5pr;
+      background-color: #fff;
+      position: absolute;
+      left: 2pr;
+      top: 14pr;
+    }
+  }
+}
+
+// bottom
+.bottom {
+  background-color: #504646;
+  padding-bottom: 30pr;
+  .title {
+    text-align: center;
+    color: #565454;
+    font-weight: bold;
+    font-size: 32pr;
+    padding: 40pr 0 12pr;
+    background-color: #f0f0f0;
+  }
+  .red-word {
+    font-size: 42pr;
+    color: #eb6849;
+  }
+  .btn-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 30pr 30pr 18pr;
+  }
+  .btn {
+    width: 45%;
+    height: 54pr;
+    background-color: #f39801;
+    border-radius: 5pr;
+    text-align: center;
+    color: #000;
+    font-size: 20pr;
+    line-height: 54pr;
+  }
+  .bottom-txt {
+    text-align: center;
+    color: #fff;
+    font-size: 18pr;
+    line-height: 34pr;
+  }
+}
+
+// 弹框
+.yuyue {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+
+  display: none;
+  .form-content {
+    position: absolute;
+    width: 714pr;
+    height: 866pr;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 310pr 16pr 0;
+    box-sizing: border-box;
+    background: url(../images/17.png) center no-repeat;
+    background-size: 100% 100%;
+    .guanbi {
+      position: absolute;
+      width: 56pr;
+      height: 56pr;
+      background: url(../images/003.png) center no-repeat;
+      background-size: 100% 100%;
+      right: 38pr;
+      top: -22pr;
+    }
+    .list {
+      margin-bottom: 26pr;
+      background-color: #fff;
+      height: 82pr;
+      line-height: 82pr;
+      padding-left: 14pr;
+      font-size: 24pr;
+      letter-spacing: 4pr;
+      color: #828282;
+      position: relative;
+    }
+  }
+  .common-input {
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  .course-list:after {
+    content: "";
+    position: absolute;
+    width: 24pr;
+    height: 24pr;
+    border:4pr solid #828282;
+    border-left:none;
+    border-bottom:none;
+   transform:rotate(135deg);
+   right:30pr;
+   top:20pr;
+  }
+  .yuyue-btn{
+      display:block;
+      width: 100%;
+      height: 82pr;
+      text-align: center;
+      line-height: 82pr;
+      background-color: #ffea00;
+      font-size:26pr;
+      color:#2f3a4b;
+        font-weight: bold;
+  }
+}
